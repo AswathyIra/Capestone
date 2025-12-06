@@ -1,0 +1,87 @@
+.about-images-triangle {
+  position: relative;
+  width: 380px;
+  height: 380px;
+  margin: 0 auto 20px auto;
+}
+.about-rest-image,
+.about-chef-image,
+.about-chefs-image {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  transition: transform 0.4s, z-index 0.4s, box-shadow 0.4s;
+  cursor: pointer;
+}
+.about-rest-image {
+  left: 80px;
+  top: 0;
+  z-index: 1;
+  transform: rotate(-8deg);
+}
+.about-chef-image {
+  left: 0;
+  top: 120px;
+  z-index: 1;
+  transform: rotate(8deg);
+}
+.about-chefs-image {
+  left: 160px;
+  top: 120px;
+  z-index: 1;
+  transform: rotate(4deg);
+}
+.about-rest-image:hover,
+.about-chef-image:hover,
+.about-chefs-image:hover {
+  z-index: 10;
+  transform: scale(1.08) rotate(0deg);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fbf9f9;
+  color: #edefee;
+  width: 100%;
+  min-height: 300px;
+  font-family: "Markazi", sans-serif;
+  padding: 40px 0;
+  overflow: visible;
+}
+
+.about-content {
+  flex: 1;
+  margin: 20px auto;
+  text-align: left;
+  padding-left: 60px;
+}
+.about-title {
+  color: #495e57;
+  font-weight: bold;
+  font-family: "Markazi", sans-serif;
+  font-size: 30pt;
+  margin: 0;
+}
+
+.about-location {
+  font-size: 20pt;
+  font-family: "Markazi", sans-serif;
+  font-weight: normal;
+  color: #ee9972;
+  font-weight: bold;
+  margin: 0;
+}
+
+.about-description {
+  font-family: "Karla", sans-serif;
+  font-size: 14pt;
+  text-align: left;
+  color: #777;
+  max-width: 600px;
+}

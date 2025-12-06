@@ -1,0 +1,60 @@
+/* Container for the specials section */
+.testimonials-container {
+  margin: 150px 60px 60px 60px;
+}
+.testimonials-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+  margin-top: 20px;
+}
+.testimonial-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.testimonial-contact {
+  display: flex;
+  padding: 10px;
+  background-color: #f6f5ea;
+  justify-content: space-between;
+}
+.testimonial-name {
+  justify-content: space-between;
+}
+.testimonial-email {
+  justify-content: space-between;
+}
+.testimonial-message {
+  font-family: "Karla", sans-serif;
+  font-size: 12pt;
+  font-weight: regular;
+  max-width: 65ch;
+  line-height: 1.5;
+  padding: 5px;
+  color: #777;
+}
+.testimonials-heading {
+    font-family: "Karla", sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.star {
+  color: #ccc; /* Unfilled star color */
+  font-size: 1.2em;
+}
+
+.star.filled {
+  color: #ffd900a9; /* Filled star color (gold) */
+}

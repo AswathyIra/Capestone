@@ -1,16 +1,17 @@
 import React from 'react';
-import Nav from "./Nav"; // Import the Nav component
-import logo from  '../assets/Logo.svg'; // Import logo image
+import Nav from "./Nav";
+import logo from '../assets/Logo.svg';
+import './Header.css';
 
 const Header = () => {
     return (
-        <header style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', height: '100vh', marginTop: '20px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-                <img src={logo} alt="Logo" style={{ height: '50px' }} />
+        <header className="header">
+            <div className="header-content">
+                <img src={logo} alt="Logo" className="logo" />
                 <Nav />
             </div>
         </header>
     );
-};
+}
 
 export default Header;

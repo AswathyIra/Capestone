@@ -1,9 +1,15 @@
 import React from 'react';
+import Banner from './Banner';
+import WeekSpecials from './WeekSpecials';
+import Testimonials from './Testimonials';
+import About from './About';
 const Home = () => {
     return (
-        <div>
-            <h1>Welcome to the Home Page</h1>
-            <p>This is the Home component of the application.</p>
+        <div className="homecontainer">
+            <Banner />
+            <WeekSpecials />
+            <Testimonials />
+            <About/>
         </div>
     );
 };

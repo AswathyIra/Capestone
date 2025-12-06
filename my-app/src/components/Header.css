@@ -1,0 +1,129 @@
+.banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #495e57;
+  color: #edefee;
+  width: 100%;
+  min-height: 400px;
+  font-family: "Markazi", sans-serif;
+  padding: 40px 0;
+  overflow: visible;
+}
+
+.banner-content {
+  flex: 1;
+  margin: 20px auto;
+  text-align: left;
+  padding-left: 60px;
+}
+
+.banner-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-image img {
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 32px;
+  margin-bottom: -180px;
+}
+
+@media (max-width: 900px) {
+  .banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .banner-content {
+    padding-left: 0;
+    padding-bottom: 20px;
+  }
+  .banner-image {
+    padding-right: 0;
+  }
+  .banner-image img {
+    max-width: 100%;
+  }
+}
+
+.banner-title {
+  color: #b49c22;
+  font-weight: bold;
+  font-family: "Markazi", sans-serif;
+  font-size: 40pt;
+  margin: 0;
+}
+
+.banner-location {
+  font-size: 30pt;
+  font-family: "Markazi", sans-serif;
+  font-weight: normal;
+  color: white;
+  margin: 0;
+}
+
+.banner-description {
+  font-family: "Karla", sans-serif;
+  font-size: 18pt;
+  text-align: left;
+  font-weight: bold;
+  color: white;
+  max-width: 600px;
+}
+
+.banner-button {
+  background-color: #f4ce14;
+  color: #333333;
+  font-family: "Karla", sans-serif;
+  font-size: 12pt;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.banner-button:hover {
+  background-color: #d0ae04;
+}
+/* Header styles */
+.header {
+  display: flex;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: center;
+}
+
+.logo {
+  height: 60px;
+}
+
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .logo {
+    height: 40px;
+    margin-bottom: 10px;
+  }
+}
