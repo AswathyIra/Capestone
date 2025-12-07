@@ -1,0 +1,203 @@
+.booking-form-container h2 {
+	color: #fff;
+	font-weight: bold;
+	font-size: 2rem;
+	margin-bottom: 18px;
+	text-align: center;
+	letter-spacing: 1px;
+}
+.booking-form-container input[type="text"] {
+	width: 100%;
+	padding: 14px 16px;
+	font-size: 1.1rem;
+	border-radius: 8px;
+	border: 1.5px solid #ccc;
+	margin-bottom: 8px;
+	box-sizing: border-box;
+}
+.booking-form-container form {
+	width: 100%;
+	max-width: 400px;
+	margin: 0 auto;
+	display: grid;
+	gap: 24px;
+     box-sizing: border-box;
+}
+	.booking-form-container label {
+		font-size: 1.1rem;
+		font-weight: 700;
+		color: #fff;
+		margin-bottom: 6px;
+}
+.booking-form-container input[type="date"],
+.booking-form-container input[type="number"],
+.booking-form-container select {
+	width: 100%;
+	padding: 14px 16px;
+	font-size: 1.1rem;
+	border-radius: 8px;
+	border: 1.5px solid #ccc;
+	margin-bottom: 8px;
+	box-sizing: border-box;
+}
+.booking-form-container input[type="submit"],
+#make-reservation {
+	width: 100%;
+	padding: 16px 0;
+	font-size: 1.1rem;
+	border-radius: 12px;
+	background-color: #f4ce14;
+	color: #333;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.12);
+	transition: background 0.2s;
+}
+.booking-form-container input[type="submit"]:hover,
+#make-reservation:hover {
+	background-color: #d0ae04;
+}
+.booking-form-container {
+	background: none;
+	border: 2px solid #e0e0e0;
+	border-radius: 18px;
+	box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+	padding: 32px 24px;
+	flex: 0 0 70%;
+	max-width: 600px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+}
+.booking-form-container::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('../assets/restaurant.jpg') no-repeat center center;
+	background-size: cover;
+	filter: blur(8px) brightness(0.7);
+	z-index: 0;
+}
+.booking-form-container > * {
+	position: relative;
+	z-index: 1;
+}
+.reservations-container {
+	display: flex;
+	flex-direction: row;
+	gap: 32px;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 32px 0;
+	width: 100%;
+	box-sizing: border-box;
+    background-color: white;
+}
+
+.reservations-form {
+	background: #fff;
+	border-radius: 16px;
+	box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+	padding: 32px 24px;
+		min-width: 0;
+		max-width: none;
+		flex: 0 0 70%;
+	display: grid;
+	gap: 18px;
+}
+	.reservations-label {
+		font-weight: 500;
+		color: #fff;
+}
+.reservations-input, .reservations-select {
+	padding: 8px 12px;
+	border-radius: 6px;
+	border: 1px solid #ccc;
+	font-size: 1rem;
+}
+.reservations-submit {
+	background: #f4ce14;
+	color: #333;
+	border: none;
+	border-radius: 8px;
+	padding: 12px 0;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 1rem;
+}
+
+.reservations-list-container {
+    flex: 0 0 40%;
+    max-width: 340px;
+    max-height: 420px;
+    overflow-y: auto;
+    background: #edf0ef;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 24px 18px;
+    min-width: 0;
+    margin-right: 30px; /* Added margin-right */
+}
+.reservations-list-title {
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin-bottom: 18px;
+	color: #495e57;
+}
+.reservations-list {
+	padding: 0;
+	list-style: none;
+}
+.reservations-list-item {
+	background: #fff;
+	margin-bottom: 12px;
+	padding: 16px;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+	font-size: 1rem;
+}
+.reservations-list-empty {
+	color: #888;
+	font-style: italic;
+}
+#make-reservation {
+  background-color: #f4ce14;
+  color: #333333;
+  font-family: "Karla", sans-serif;
+  font-size: 12pt;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+#make-reservation:hover {
+  background-color: #d0ae04;
+}
+
+@media (max-width: 900px) {
+	.reservations-container {
+		flex-direction: column;
+		gap: 24px;
+		align-items: center;
+	}
+	.reservations-list-container {
+		max-width: 100%;
+		min-width: 0;
+		width: 100%;
+		margin-top: 0;
+	}
+	.reservations-form {
+		max-width: 100%;
+		min-width: 0;
+		width: 100%;
+	}
+}
